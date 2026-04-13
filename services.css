@@ -1,0 +1,566 @@
+body {
+    margin: 0;
+    font-family: 'Averia Serif Libre', serif;
+    background-color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 120px;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+.logo-container img {
+    height: 150px;
+    object-fit: contain;
+}
+
+.nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 47px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+
+.nav-btn:hover {
+    color: #C05834;
+}
+
+.nav-btn.active {
+    border-bottom: 2px solid #C05834;
+    padding-bottom: 4px;
+}
+
+.center-logo {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.center-logo img {
+    width: 900px;
+    height: 900px;
+    object-fit: contain;
+}
+
+.service-background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+  
+.service-background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.service-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+  
+.service-center-text-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    color: white;
+    text-align: center;
+    font-family: 'Libre Caslon Display', serif;
+    z-index: 2;
+    margin: 0;
+}
+
+.service-buttons-container {
+    position: absolute;
+    padding: 100px;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    z-index: 3;
+}
+
+.service-button {
+    padding: 15px 25px;
+    background-color: #c44d258c;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 200px;
+    border: 1px solid #c44d258c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    scroll-margin-top: 80px;
+}
+
+.service-button:hover {
+    background-color: transparent;
+    color: #c44e25;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    border-color: #c44e25;
+}
+
+.service-center-text-1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    color: white;
+    text-align: center;
+    font-family: 'Libre Caslon Display', serif;
+    z-index: 2;
+    margin: 0;
+}
+
+.botique-container {
+    max-width: 1200px;
+    margin: 200px auto;
+    padding: 0 20px;
+}
+
+.botique-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.botique-text-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.botique-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.botique-text-header {
+    position: relative;
+    display: inline-block;
+    font-size: 50px;
+    color: #222222;
+    font-family: 'Libre Caslon Text', serif;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.botique-text-header::after {
+    content: "";
+    display: block;
+    width: 330px;
+    height: 4px;
+    background-color: #C05834;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.botique-description {
+    font-family: 'DM Sans', serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+    word-spacing: 2px;
+}
+
+.botique-images {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 50%;
+}
+
+.botique-images img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    object-fit: contain;
+}
+
+.dining-container {
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.dining-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dining-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3.5rem;
+    font-family: 'Libre Caslon Text', serif;
+    text-align: center;
+    z-index: 2;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.overlay-text::after {
+    content: "";
+    display: block;
+    width: 400px;
+    height: 4px;
+    background-color: #C05834;
+    margin-top: 20px;
+}
+
+.dining-section {
+    max-width: 1200px;
+    max-height: 1000px;
+    margin: 0px auto;
+    padding: 100px 150px;
+    background-color: #F7EFE4;
+    text-align: center;
+
+}
+
+.dining-options-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.dining-option {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.dining-image-container {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.dining-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dining-text-content {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dining-title {
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    color: #222222;
+    font-family: 'Libre Caslon Text', serif;
+    margin: 100;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.dining-title::after {
+    content: "";
+    display: block;
+    width: 250px;
+    text-align: center;
+    height: 4px;
+    background-color: #C05834;
+    margin-top: 20px;
+}
+
+.dining-description {
+    font-family: 'DM Sans', serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    word-spacing: 5px;
+}
+
+.book-now-btn-container {
+    margin: 40px auto;
+    text-align: center;
+
+}
+
+.book-now-btn {
+    display: inline-block;
+    background-color: #C05834;
+    color: white;
+    font-family: 'Averia Serif Libre', serif;
+    font-weight: bold;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #C05834;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 150px;
+}
+
+.book-now-btn:hover {
+    background-color: transparent;
+    color: #c44e25;
+}
+
+.menu-container {
+    max-width: 1200px;
+    margin: 60px auto 40px;
+    padding: 0 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.menu-text-header {
+    font-size: 4rem;
+    color: #222;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    font-family: 'Libre Casion Text', serif;
+}
+
+.menu-text-header::after {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 4px;
+    background-color: #C05834;
+    margin: 20px auto 0;
+}
+
+.menu-text-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'DM Sans', serif;
+}
+
+.menu-options {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu-container {
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+}
+
+.menu-items-options {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.menu-food-option {
+    min-width: calc(33.33% - 40px);
+    margin: 0 20px;
+    background: #fff;
+    overflow: hidden;
+    text-align: center;
+}
+
+.food-image {
+    width: 100%;
+    height: 270px;
+    object-fit: scale-down;
+}
+
+.menu-food-option h3 {
+    color: #333;
+    margin: 20px 0 10px;
+    font-size: 1.5rem;
+    font-family: 'Libre Casion Text', serif;
+    font-weight: bold;
+}
+
+.menu-food-option h3::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    background-color: #C05834;
+    margin: 20px auto 0;
+}
+
+.menu-food-option p {
+    color: #716f6f;
+    padding: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    min-height: 60px;
+    font-family: 'DM Sans', serif;
+}
+
+.food-price {
+    display: block;
+    color: #333;
+    margin: 20px 0;
+    font-size: 1.3rem;
+    font-family: 'DM Sans', serif;
+}
+
+.menu-nav-btn {
+    position: absolute;
+    top: 50%;
+    margin-top: -120px;
+    transform: translateY(-50%);
+    background: transparent;
+    color: #c44e25;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.menu-nav-btn:hover {
+    background: #a84322;
+}
+
+.prev-btn {
+    left: -25px;
+}
+
+.next-btn {
+    right: -25px;
+}
+
+.site-footer {
+    background-color: #222222;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px 0 20px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-column {
+    flex: 1 1 200px;
+}
+
+.footer-header {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: 'Libre Caslon Text', serif;
+    color: #C05834;
+    padding-top: 60px;
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.footer-text a {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.footer-bottom img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.footer-logo {
+    width: 200px;
+    margin-bottom: 15px;
+    display: block;
+}
