@@ -1,0 +1,439 @@
+body {
+    margin: 0;
+    font-family: 'Averia Serif Libre', serif;
+    background-color: white;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 120px;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+.logo-container img {
+    height: 150px;
+    object-fit: contain;
+}
+
+.nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 47px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+
+.nav-btn:hover {
+    color: #C05834;
+}
+
+.nav-btn.active {
+    border-bottom: 2px solid #C05834;
+    padding-bottom: 4px;
+}
+
+.center-logo {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.center-logo img {
+    width: 900px;
+    height: 900px;
+    object-fit: contain;
+}
+  
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  .about-center-text-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 130px;
+    color: white;
+    text-align: center;
+    font-family: 'Libre Caslon Display', serif;
+    z-index: 2;
+    margin: 0;
+  }
+
+  .about-center-text-2 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -130%);
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Averia Serif Libre', serif;
+    z-index: 3;
+    margin: 0;
+  }
+    
+.booking-section-text {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-top: 0vh;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.booking-section-text-header {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 50px;
+    color: #222222;
+    font-family: 'Libre Caslon Text', serif;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.booking-section-text-header::after {
+    content: "";
+    display: block;
+    width: 330px;
+    height: 4px;
+    background-color: #C05834;
+    margin: 20px auto 0;
+}
+
+.map-container {
+    width: 100%;       
+    max-width: 1000px; 
+    margin: 0 auto;    
+    overflow: visible;
+}
+
+.map-image {
+    width: 100%;      
+    height: auto;     
+    display: block;   
+    object-fit: contain;
+}
+
+.contact-booking-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 20px;
+    gap: 50px;
+  }
+  
+.contact-info {
+    flex: 1;
+    min-width: 250px;
+    color: #222222;
+    font-family: DM Sans, sans-serif;
+}
+  
+.contact-info h3 {
+    color: #c44e25;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'Averia Serif Libre', serif;
+}
+  
+.contact-info p {
+    margin: 5px 0 15px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+  
+.booking-form {
+    flex: 2;
+    min-width: 300px;
+}
+  
+.booking-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+  
+.form-row input {
+    flex: 1;
+    padding: 10px;
+    font-size: smaller;
+    font-size: 14px;
+    border: 0.5px solid #c44e25;
+    background-color: #f5ede3;
+    font-family: 'DM Sans', serif;
+}
+
+.form-row select {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 0.5px solid #c44e25;
+  background-color: #f5ede3;
+  font-family: 'Averia Serif Libre', serif;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  color: inherit; 
+  min-width: 120px; 
+}
+
+.form-row input:focus,
+.form-row select:focus {
+  outline: 1px solid #c44e25;
+}
+  
+.booking-form textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 0.5px solid #c44e25;
+    background-color: #f5ede3;
+    resize: vertical;
+    min-height: 150px;
+    font-family: 'DM Sans', serif;
+}
+  
+.booking-form button {
+    width: 120px;
+    align-self: flex-end;
+    padding: 10px 15px;
+    background-color: #c44e25;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Averia Serif Libre', serif;border: 2px solid #C05834;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+  background-color: transparent;
+  color: #c44e25;
+}
+
+.message-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10px 675px 150px;
+  text-align: center;
+  background-color: #F7EFE4;
+}
+
+.message-section-text-header {
+  font-size: 50px;
+  color: #090505;
+  font-family: 'Libre Caslon Text', serif;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  margin-top: 150px;
+}
+
+.message-section-text-header::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 4px;
+  background-color: #C05834;
+  margin: 20px auto 0;
+}
+
+.message-form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px;
+  padding-left: 5px;
+  border-radius: 8px;
+  font-family: 'DM Sans' serif;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 0.5px solid #c44e25;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 50px;
+}
+
+textarea {
+  min-height: 295px;
+  resize: vertical;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left; 
+  font-family: 'DM Sans' serif;
+  font-size: 1.1rem ;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #050404;
+  font-family: 'Averia Serif Libre', serif;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 0.5px solid #E0D5C8;
+  border-radius: 4px;
+  font-size: 14px;
+  border: 0.5px solid #c44e25;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.send-button {
+  display: inline-block;
+  background-color: #C05834;
+  color: white;
+  font-family: 'Averia Serif Libre', serif;
+  font-weight: bold;
+  padding: 15px 210px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #C05834;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 40px;
+}
+
+.send-button:hover {
+  background-color: transparent;
+  color: #c44e25;
+}
+
+.site-footer {
+  background-color: #222222;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px 0 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+}
+
+.footer-header {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-family: 'Libre Caslon Text', serif;
+  color: #C05834;
+  padding-top: 60px;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.footer-text a {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.footer-bottom img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+.footer-logo {
+  width: 200px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.contact-link {
+  color: #222222;
+  text-decoration: none;
+  font-family: DM Sans, sans-serif;
+  font-size: 14px;
+  text-decoration: underline
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}

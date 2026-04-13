@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    font-family: 'Averia Serif Libre', serif;
+    background-color: white;
+  }
+  
+  .background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 120px;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logo-container img {
+    height: 150px;
+    object-fit: contain;
+  }
+  
+  .nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 47px;
+  }
+  
+  .nav-btn {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+  }
+  
+  .nav-btn:hover {
+    color: #C05834;
+  }
+  
+  .nav-btn.active {
+    border-bottom: 2px solid #C05834;
+    padding-bottom: 4px;
+  }
+  
+  .center-logo {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .center-logo img {
+    width: 900px;
+    height: 900px;
+    object-fit: contain;
+  }
+  
+  .faqs-center-text-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    color: white;
+    text-align: center;
+    font-family: 'Libre Caslon Display', serif;
+    z-index: 2;
+    margin: 0;
+  }
+  
+  .faqs-center-text-2 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -130%);
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Averia Serif Libre', serif;
+    z-index: 3;
+    margin: 0;
+  }
+  
+  .button-orange {
+    display: inline-block;
+    background-color: #C05834;
+    color: white;
+    font-family: 'Averia Serif Libre', serif;
+    font-weight: bold;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #C05834;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .button-orange:hover {
+    background-color: rgba(192, 88, 52, 0.1);
+    color: #C05834;
+    border: 2px solid #C05834;
+  }
+
+.faqs-section-1 {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-top: 100vh;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.faqs-section-1-content {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faqs-section-1 img {
+    width: 125px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.faqs-section-1-header {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 50px;
+    color: #222222;
+    font-family: 'Libre Caslon Text', serif;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.faqs-section-1-header::after {
+    content: "";
+    display: block;
+    width: 330px;
+    height: 4px;
+    background-color: #C05834;
+    margin: 20px auto 0;
+}
+
+.faqs-section-1-text {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    color: #222222;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 36px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.faqs-section-1-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.faqs-section-1-left, .faqs-section-1-right {
+    flex: 1;
+    text-align: center;
+}
+
+.faqs-subheader {
+    font-family: 'Libre Caslon Text', serif;
+    font-size: 35px;
+    color: #222222;
+    margin-bottom: 1px;
+}
+
+.faqs-section-2 {
+    background-color: #F7EFE4;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.faqs-section-2-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faqs-section-2-header {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    color: #222222;
+    font-family: 'Libre Caslon Text', serif;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.site-footer {
+  background-color: #222222;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px 0 20px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+}
+
+.footer-header {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-family: 'Libre Caslon Text', serif;
+  color: #C05834;
+  padding-top: 60px;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.footer-text a {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.footer-bottom img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.footer-logo {
+  width: 200px;
+  margin-bottom: 15px;
+  display: block;
+}

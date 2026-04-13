@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Home Page</title>
+
+  <link rel="stylesheet" href="cb.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background-container">
+    <img src="pic_cb.png" alt="Background" class="background-image">
+    <div class="background-overlay"></div>
+    <p class="about-center-text-1">CONTACT & BOOKING</p>
+    <p class="about-center-text-2">Let's stay in touch.</p>
+  </div>
+
+  <div class="booking-section-text">
+      <p class="booking-section-text-header">Book a Reservation</p>
+  </div>
+
+  <div class="map-container">
+    <img src="map.png" alt="map" class="map-image">
+  </div>
+
+  <nav class="navbar">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="logo.png" alt="Logo">
+      </a>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html" class="nav-btn">HOME</a>
+      <a href="about.html" class="nav-btn">ABOUT</a>
+      <a href="services.html" class="nav-btn">SERVICES</a>
+      <a href="faqs.html" class="nav-btn">FAQS</a>
+      <a href="cb.html" class="nav-btn active">CONTACT & BOOKING</a>
+    </div>
+  </nav>
+
+  <div class="contact-booking-section">
+    <div class="contact-info">
+      <h3>Location</h3>
+      <p>115 P. Pelayo Street, Poblacion District, Davao City, Philippines, 8000</p>
+  
+      <h3>Open Hours</h3>
+      <p>Monday – Sunday<br>11:00AM – 9:30PM</p>
+  
+      <h3>Contact</h3>
+      <p>0998 593 3763</p>
+  
+      <h3>Email</h3>
+      <p><a href="mailto:info@bondibourke.com" class="contact-link">info@bondibourke.com</a></p>
+  
+      <h3>Instagram</h3>
+      <p><a href="https://instagram.com/bondibourkeph" target="_blank" class="contact-link">instagram.com/bondibourkeph</a></p>
+  
+      <h3>Facebook</h3>
+      <p><a href="https://facebook.com/bondibourkedavao" target="_blank" class="contact-link">facebook.com/bondibourkedavao</a></p>
+    </div>
+    
+    <div class="booking-form">
+        <form>
+            <div class="form-row">
+                <input type="text" placeholder="Name*" required />
+                <input type="date" placeholder="Date*" required />
+                <input type="time" placeholder="Time*" required />
+            </div>
+
+            <div class="form-row">
+              <input type="tel" placeholder="Phone*" required />
+              <select class="room-select" required>
+                  <option value="" disabled selected>Room*</option>
+                  <option value="1">Main Dining Area</option>
+                  <option value="2">Private Room</option>
+                  <option value="3">Alfresco Bar</option>
+              </select>
+          </div>
+
+            <div class="form-row">
+                <input type="email" placeholder="Email*" required />
+                <input type="number" placeholder="Number of Seats*" required />
+            </div>
+            
+            <textarea placeholder="Note"></textarea>
+            <button type="submit">BOOK</button>
+        </form>
+    </div>
+
+    <div class="message-section">
+      <p class="message-section-text-header">Message Us</p>
+        <div class="message-form-container">
+            <form>
+              <div class="form-group">
+                <input type="text" placeholder="Name">
+              </div>
+
+              <div class="form-group">
+                <input type="email" placeholder="Email">
+              </div>
+
+              <div class="form-group">
+                <input type="tel" placeholder="Phone">
+              </div>
+
+              <div class="form-group">
+                <textarea placeholder="Your Message"></textarea>
+              </div>
+
+              <button type="submit" class="send-button">SEND</button>
+            </form>
+          </div>
+      </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-column">
+            <img src="logo-white.png" alt="Logo" class="footer-logo">
+          <p class="footer-text">Aussie comfort food, wine, & small plates served in a chic and airy space complete with a private room fit for every occasion.</p>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-header">ADDRESS</h4>
+          <p class="footer-text">115 P. Pelayo Street, Poblacion District, Davao City, Philippines, 8000</p>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-header">OPEN HOURS</h4>
+          <p class="footer-text">Monday - Sunday <br> 11:00AM - 9:30PM</p>
+        </div>
+        <div class="footer-column">
+            <h4 class="footer-header">MORE INFO</h4>
+            
+            <p class="footer-text">
+                <span class="footer-text">0998 593 3763</span>
+                <a href="mailto:info@bondibourke.com">info@bondibourke.com</a><br>
+                <a href="https://www.instagram.com/bondibourkeph" target="_blank">@bondibourkeph</a><br>
+                <a href="https://www.facebook.com/BondiBourkeDavao" target="_blank">Bondi&amp;Bourke Davao</a>
+            </p>
+        </div>
+
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <img src="footer.png" alt="Footer Image">
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="cb.js"></script>
+</body>
+</html>
+
